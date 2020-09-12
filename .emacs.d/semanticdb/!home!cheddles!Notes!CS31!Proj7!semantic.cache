@@ -1,0 +1,524 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [523 542])
+            ("string" include (:system-flag t) nil [543 560])
+            ("random" include (:system-flag t) nil [561 578])
+            ("utility" include (:system-flag t) nil [579 597])
+            ("cstdlib" include (:system-flag t) nil [598 616])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [617 637])
+            ("MAXROWS" variable
+               (:constant-flag t
+                :default-value "20"
+                :type "int")
+                nil [814 837])
+            ("MAXCOLS" variable
+               (:constant-flag t
+                :default-value "30"
+                :type "int")
+                nil [886 909])
+            ("MAXZOMBIES" variable
+               (:constant-flag t
+                :default-value "150"
+                :type "int")
+                nil [961 988])
+            ("UP" variable
+               (:constant-flag t
+                :default-value "0"
+                :type "int")
+                nil [1032 1054])
+            ("DOWN" variable
+               (:constant-flag t
+                :default-value "1"
+                :type "int")
+                nil [1055 1077])
+            ("LEFT" variable
+               (:constant-flag t
+                :default-value "2"
+                :type "int")
+                nil [1078 1100])
+            ("RIGHT" variable
+               (:constant-flag t
+                :default-value "3"
+                :type "int")
+                nil [1101 1123])
+            ("NUMDIRS" variable
+               (:constant-flag t
+                :default-value "4"
+                :type "int")
+                nil [1124 1146])
+            ("decodeDirection" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dir" variable (:type "char") (reparse-symbol arg-sub-list) [1357 1366]))                  
+                :type "int")
+                nil [1337 1367])
+            ("randInt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("min" variable (:type "int") (reparse-symbol arg-sub-list) [1380 1388])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [1389 1397]))                  
+                :type "int")
+                nil [1368 1398])
+            ("clearScreen" function
+               (:prototype-flag t
+                :type "void")
+                nil [1399 1418])
+            ("Arena" type
+               (:prototype t
+                :type "class")
+                nil [1593 1605])
+            ("Zombie" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1760 1767])
+                    ("Zombie" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("ap" variable
+                               (:pointer 1
+                                :type ("Arena" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1802 1812])
+                            ("r" variable (:type "int") (reparse-symbol arg-sub-list) [1813 1819])
+                            ("c" variable (:type "int") (reparse-symbol arg-sub-list) [1820 1826]))                          
+                        :type ("Zombie" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1795 1827])
+                    ("row" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1854 1871])
+                    ("col" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1876 1893])
+                    ("move" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1919 1931])
+                    ("getAttacked" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dir" variable (:type "int") (reparse-symbol arg-sub-list) [1953 1961]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1936 1962])
+                    ("private" label nil (reparse-symbol classsubparts) [1966 1974])
+                    ("m_arena" variable
+                       (:pointer 1
+                        :type ("Arena" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1979 1994])
+                    ("m_row" variable (:type "int") (reparse-symbol classsubparts) [1999 2012])
+                    ("m_col" variable (:type "int") (reparse-symbol classsubparts) [2017 2030]))                  
+                :type "class")
+                nil [1743 2232])
+            ("Player" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2251 2258])
+                    ("Player" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("ap" variable
+                               (:pointer 1
+                                :type ("Arena" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2293 2303])
+                            ("r" variable (:type "int") (reparse-symbol arg-sub-list) [2304 2310])
+                            ("c" variable (:type "int") (reparse-symbol arg-sub-list) [2311 2317]))                          
+                        :type ("Player" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2286 2318])
+                    ("row" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2345 2362])
+                    ("col" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2367 2384])
+                    ("age" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2389 2406])
+                    ("isDead" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2411 2431])
+                    ("stand" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2457 2472])
+                    ("moveOrAttack" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dir" variable (:type "int") (reparse-symbol arg-sub-list) [2497 2505]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2477 2506])
+                    ("setDead" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2511 2528])
+                    ("private" label nil (reparse-symbol classsubparts) [2532 2540])
+                    ("m_arena" variable
+                       (:pointer 1
+                        :type ("Arena" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2545 2560])
+                    ("m_row" variable (:type "int") (reparse-symbol classsubparts) [2565 2578])
+                    ("m_col" variable (:type "int") (reparse-symbol classsubparts) [2583 2596])
+                    ("m_age" variable (:type "int") (reparse-symbol classsubparts) [2601 2614])
+                    ("m_dead" variable (:type "bool") (reparse-symbol classsubparts) [2619 2633]))                  
+                :type "class")
+                nil [2234 2636])
+            ("Arena" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2654 2661])
+                    ("Arena" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("nRows" variable (:type "int") (reparse-symbol arg-sub-list) [2706 2716])
+                            ("nCols" variable (:type "int") (reparse-symbol arg-sub-list) [2717 2727]))                          
+                        :type ("Arena" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2700 2728])
+                    ("Arena" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2733 2742])
+                    ("rows" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2769 2790])
+                    ("cols" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2795 2816])
+                    ("player" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :type ("Player" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2821 2844])
+                    ("zombieCount" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2849 2877])
+                    ("numZombiesAt" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [2903 2909])
+                            ("c" variable (:type "int") (reparse-symbol arg-sub-list) [2910 2916]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2882 2923])
+                    ("determineNewPosition" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2957 2964])
+                            ("c" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2965 2972])
+                            ("dir" variable (:type "int") (reparse-symbol arg-sub-list) [2973 2981]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2928 2988])
+                    ("display" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2993 3017])
+                    ("addZombie" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [3060 3066])
+                            ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3067 3073]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3043 3074])
+                    ("addPlayer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [3096 3102])
+                            ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3103 3109]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3079 3110])
+                    ("attackZombieAt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [3137 3143])
+                            ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3144 3150])
+                            ("dir" variable (:type "int") (reparse-symbol arg-sub-list) [3151 3159]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3115 3160])
+                    ("moveZombies" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3165 3186])
+                    ("private" label nil (reparse-symbol classsubparts) [3190 3198])
+                    ("m_rows" variable (:type "int") (reparse-symbol classsubparts) [3203 3218])
+                    ("m_cols" variable (:type "int") (reparse-symbol classsubparts) [3223 3238])
+                    ("m_player" variable
+                       (:pointer 1
+                        :type ("Player" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3243 3260])
+                    ("m_zombies" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("Zombie" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3265 3295])
+                    ("m_nZombies" variable (:type "int") (reparse-symbol classsubparts) [3300 3319]))                  
+                :type "class")
+                nil [2638 3322])
+            ("Game" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3339 3346])
+                    ("Game" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("rows" variable (:type "int") (reparse-symbol arg-sub-list) [3390 3399])
+                            ("cols" variable (:type "int") (reparse-symbol arg-sub-list) [3400 3409])
+                            ("nZombies" variable (:type "int") (reparse-symbol arg-sub-list) [3410 3423]))                          
+                        :type ("Game" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3385 3424])
+                    ("Game" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3429 3437])
+                    ("play" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3463 3475])
+                    ("private" label nil (reparse-symbol classsubparts) [3479 3487])
+                    ("m_arena" variable
+                       (:pointer 1
+                        :type ("Arena" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3492 3507]))                  
+                :type "class")
+                nil [3324 3510])
+            ("Zombie" function
+               (:constructor-flag t
+                :parent "Zombie"
+                :arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("Arena" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3706 3716])
+                    ("r" variable (:type "int") (reparse-symbol arg-sub-list) [3717 3723])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [3724 3730]))                  
+                :type ("Zombie" type (:type "class") nil nil))
+                nil [3691 4115])
+            ("row" function
+               (:methodconst-flag t
+                :parent "Zombie"
+                :type "int")
+                nil [4117 4162])
+            ("col" function
+               (:methodconst-flag t
+                :parent "Zombie"
+                :type "int")
+                nil [4164 4392])
+            ("move" function
+               (:parent "Zombie"
+                :type "void")
+                nil [4394 4652])
+            ("getAttacked" function
+               (:parent "Zombie"
+                :arguments 
+                  ( ("dir" variable (:type "int") (reparse-symbol arg-sub-list) [4679 4687]))                  
+                :type "bool")
+                nil [4654 5224])
+            ("Player" function
+               (:constructor-flag t
+                :parent "Player"
+                :arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("Arena" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5421 5431])
+                    ("r" variable (:type "int") (reparse-symbol arg-sub-list) [5432 5438])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [5439 5445]))                  
+                :type ("Player" type (:type "class") nil nil))
+                nil [5406 5866])
+            ("row" function
+               (:methodconst-flag t
+                :parent "Player"
+                :type "int")
+                nil [5868 6093])
+            ("col" function
+               (:methodconst-flag t
+                :parent "Player"
+                :type "int")
+                nil [6095 6323])
+            ("age" function
+               (:methodconst-flag t
+                :parent "Player"
+                :type "int")
+                nil [6325 6542])
+            ("stand" function
+               (:parent "Player"
+                :type "void")
+                nil [6544 6581])
+            ("moveOrAttack" function
+               (:parent "Player"
+                :arguments 
+                  ( ("dir" variable (:type "int") (reparse-symbol arg-sub-list) [6609 6617]))                  
+                :type "void")
+                nil [6583 6862])
+            ("isDead" function
+               (:methodconst-flag t
+                :parent "Player"
+                :type "bool")
+                nil [6864 7026])
+            ("setDead" function
+               (:parent "Player"
+                :type "void")
+                nil [7028 7073])
+            ("Arena" function
+               (:constructor-flag t
+                :parent "Arena"
+                :arguments 
+                  ( ("nRows" variable (:type "int") (reparse-symbol arg-sub-list) [7267 7277])
+                    ("nCols" variable (:type "int") (reparse-symbol arg-sub-list) [7278 7288]))                  
+                :type ("Arena" type (:type "class") nil nil))
+                nil [7254 7597])
+            ("Arena" function
+               (:destructor-flag t
+                :parent "Arena"
+                :type "void")
+                nil [7599 7701])
+            ("rows" function
+               (:methodconst-flag t
+                :parent "Arena"
+                :type "int")
+                nil [7703 7935])
+            ("cols" function
+               (:methodconst-flag t
+                :parent "Arena"
+                :type "int")
+                nil [7937 8172])
+            ("player" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "Arena"
+                :type ("Player" type (:type "class") nil nil))
+                nil [8174 8228])
+            ("zombieCount" function
+               (:methodconst-flag t
+                :parent "Arena"
+                :type "int")
+                nil [8230 8287])
+            ("numZombiesAt" function
+               (:methodconst-flag t
+                :parent "Arena"
+                :arguments 
+                  ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [8313 8319])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [8320 8326]))                  
+                :type "int")
+                nil [8289 8465])
+            ("determineNewPosition" function
+               (:methodconst-flag t
+                :parent "Arena"
+                :arguments 
+                  ( ("r" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8500 8507])
+                    ("c" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8508 8515])
+                    ("dir" variable (:type "int") (reparse-symbol arg-sub-list) [8516 8524]))                  
+                :type "bool")
+                nil [8467 9130])
+            ("display" function
+               (:methodconst-flag t
+                :parent "Arena"
+                :type "void")
+                nil [9132 10702])
+            ("addZombie" function
+               (:parent "Arena"
+                :arguments 
+                  ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [10726 10732])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [10733 10739]))                  
+                :type "bool")
+                nil [10704 11270])
+            ("addPlayer" function
+               (:parent "Arena"
+                :arguments 
+                  ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [11294 11300])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [11301 11307]))                  
+                :type "bool")
+                nil [11272 11536])
+            ("attackZombieAt" function
+               (:parent "Arena"
+                :arguments 
+                  ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [11565 11571])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [11572 11578])
+                    ("dir" variable (:type "int") (reparse-symbol arg-sub-list) [11579 11587]))                  
+                :type "bool")
+                nil [11538 11963])
+            ("moveZombies" function
+               (:parent "Arena"
+                :type "bool")
+                nil [11965 12340])
+            ("Game" function
+               (:constructor-flag t
+                :parent "Game"
+                :arguments 
+                  ( ("rows" variable (:type "int") (reparse-symbol arg-sub-list) [12531 12540])
+                    ("cols" variable (:type "int") (reparse-symbol arg-sub-list) [12541 12550])
+                    ("nZombies" variable (:type "int") (reparse-symbol arg-sub-list) [12551 12564]))                  
+                :type ("Game" type (:type "class") nil nil))
+                nil [12520 13580])
+            ("Game" function
+               (:destructor-flag t
+                :parent "Game"
+                :type "void")
+                nil [13582 13619])
+            ("play" function
+               (:parent "Game"
+                :type "void")
+                nil [13621 14520])
+            ("decodeDirection" function
+               (:arguments 
+                  ( ("dir" variable (:type "char") (reparse-symbol arg-sub-list) [14734 14743]))                  
+                :type "int")
+                nil [14714 14938])
+            ("randInt" function
+               (:arguments 
+                  ( ("min" variable (:type "int") (reparse-symbol arg-sub-list) [15004 15012])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [15013 15021]))                  
+                :type "int")
+                nil [14992 15226])
+            ("main" function (:type "int") nil [15392 15557])
+            ("iostream" include (:system-flag t) nil [16735 16754])
+            ("cstring" include (:system-flag t) nil [16755 16773])
+            ("cstdlib" include (:system-flag t) nil [16774 16792])
+            ("clearScreen" function (:type "void") nil [16794 17157]))          
+      :file "zombies-skeleton.cpp"
+      :pointmax 17166
+      :fsize 17165
+      :lastmodtime '(23552 20176 706677 324000)
+      :unmatched-syntax nil))
+  :file "!home!cheddles!Notes!CS31!Proj7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,124 @@
+177
+177
+/home/cheddles/.xinitrc: line 7: xss-lock: command not found
+XMonad is recompiling and replacing itself another XMonad process because the current process is called "xmonad" but the compiled configuration should be called "xmonad-x86_64-linux"
+XMonad will use ghc to recompile, because "/home/cheddles/.xmonad/build" does not exist.
+XMonad skipping recompile because it is not forced (e.g. via --recompile), and neither xmonad.hs nor any *.hs / *.lhs / *.hsc files in lib/ have been changed.
+user error (Error in function getWindowAttributes)
+xmonad is /usr/bin/xmonad
+XMonad will use ghc to recompile, because "/home/cheddles/.xmonad/build" does not exist.
+XMonad recompilation process exited with success!
+"xmobar: eof at an early stage"
+XMonad is recompiling and replacing itself another XMonad process because the current process is called "xmonad" but the compiled configuration should be called "xmonad-x86_64-linux"
+XMonad will use ghc to recompile, because "/home/cheddles/.xmonad/build" does not exist.
+XMonad skipping recompile because it is not forced (e.g. via --recompile), and neither xmonad.hs nor any *.hs / *.lhs / *.hsc files in lib/ have been changed.
+
+(firefox:801): Gtk-CRITICAL **: 14:01:35.106: gtk_widget_get_window: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(firefox:801): Gtk-CRITICAL **: 14:01:35.134: gtk_widget_get_window: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(firefox:801): Gtk-CRITICAL **: 14:01:37.515: gtk_widget_get_window: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(firefox:801): Gtk-CRITICAL **: 14:01:37.525: gtk_widget_get_window: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(firefox:801): Gtk-CRITICAL **: 14:01:56.299: gtk_widget_get_window: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(firefox:801): Gtk-CRITICAL **: 14:01:56.309: gtk_widget_get_window: assertion 'GTK_IS_WIDGET (widget)' failed
+error: no operation specified (use -h for help)
+
+** (pcmanfm:1484): WARNING **: 14:23:07.554: The directory '~/Templates' doesn't exist, ignoring it
+
+(pcmanfm:1484): Gdk-WARNING **: 14:23:08.235: gdk_window_set_icon_list: icons too large
+env WINEPREFIX="/home/cheddles/.wine" wine start /ProgIDOpen inifile '/home/cheddles/Notes/.gitignore' 
+003c:err:service:process_send_command service protocol error - failed to write pipe!
+003c:fixme:service:scmdatabase_autostart_services Auto-start service L"PlugPlay" failed to start: 1053
+0078:fixme:x11settings:X11DRV_ChangeDisplaySettingsEx Changing non-primary adapter L"\\\\.\\DISPLAY2" settings is currently unsupported.
+vim '/home/cheddles/Notes/.gitignore' 
+0024:fixme:exec:SHELL_execute flags ignored: 0x00000100
+user error (Error in function getWindowAttributes)
+user error (Error in function getWindowAttributes)
+user error (Error in function getWindowAttributes)
+
+** (pcmanfm:1609): WARNING **: 14:27:45.763: The directory '~/Templates' doesn't exist, ignoring it
+
+(pcmanfm:1609): Gdk-WARNING **: 14:27:45.844: gdk_window_set_icon_list: icons too large
+
+(pcmanfm:1609): GdkPixbuf-CRITICAL **: 14:28:10.545: info_cb: assertion 'width > 0 && height > 0' failed
+
+(pcmanfm:1609): GdkPixbuf-CRITICAL **: 14:28:10.602: info_cb: assertion 'width > 0 && height > 0' failed
+env WINEPREFIX="/home/cheddles/.wine" wine start /ProgIDOpen inifile '/home/cheddles/Notes/.gitignore' 
+0050:fixme:x11settings:X11DRV_ChangeDisplaySettingsEx Changing non-primary adapter L"\\\\.\\DISPLAY2" settings is currently unsupported.
+vim '/home/cheddles/Notes/.gitignore' 
+0024:fixme:exec:SHELL_execute flags ignored: 0x00000100
+007c:err:rpc:I_RpcReceive we got fault packet with status 0x1c010003
+
+(pcmanfm:1609): Gdk-WARNING **: 14:28:43.551: gdk_window_set_icon_list: icons too large
+user error (Error in function getWindowAttributes)
+
+(pcmanfm:1609): GdkPixbuf-CRITICAL **: 14:29:09.560: info_cb: assertion 'width > 0 && height > 0' failed
+
+(pcmanfm:1609): GdkPixbuf-CRITICAL **: 14:29:09.607: info_cb: assertion 'width > 0 && height > 0' failed
+
+(pcmanfm:1609): GdkPixbuf-CRITICAL **: 14:29:19.614: info_cb: assertion 'width > 0 && height > 0' failed
+
+(pcmanfm:1609): GdkPixbuf-CRITICAL **: 14:29:19.671: info_cb: assertion 'width > 0 && height > 0' failed
+user error (Error in function getWindowAttributes)
+user error (Error in function getWindowAttributes)
+user error (Error in function getWindowAttributes)
+
+** (pcmanfm:1768): WARNING **: 14:30:13.574: The directory '~/Templates' doesn't exist, ignoring it
+
+(pcmanfm:1768): Gdk-WARNING **: 14:30:13.674: gdk_window_set_icon_list: icons too large
+
+(pcmanfm:1768): GdkPixbuf-CRITICAL **: 14:30:25.802: info_cb: assertion 'width > 0 && height > 0' failed
+
+(pcmanfm:1768): GdkPixbuf-CRITICAL **: 14:30:25.850: info_cb: assertion 'width > 0 && height > 0' failed
+vim '/home/cheddles/Notes/.gitignore' 
+user error (Error in function getWindowAttributes)
+user error (Error in function getWindowAttributes)
+user error (Error in function getWindowAttributes)
+user error (Error in function getWindowAttributes)
+user error (Error in function getWindowAttributes)
+
+** (pcmanfm:2004): WARNING **: 15:09:07.509: The directory '~/Templates' doesn't exist, ignoring it
+
+(pcmanfm:2004): Gdk-WARNING **: 15:09:07.555: gdk_window_set_icon_list: icons too large
+user error (Error in function getWindowAttributes)
+vim '/home/cheddles/.git/description' 
+user error (Error in function getWindowAttributes)
+env WINEPREFIX="/home/cheddles/.wine" wine start /ProgIDOpen inifile '/home/cheddles/.git/config' 
+0050:fixme:x11settings:X11DRV_ChangeDisplaySettingsEx Changing non-primary adapter L"\\\\.\\DISPLAY2" settings is currently unsupported.
+env WINEPREFIX="/home/cheddles/.wine" wine start /ProgIDOpen inifile '/home/cheddles/.git/config' 
+0024:fixme:exec:SHELL_execute flags ignored: 0x00000100
+00c0:fixme:exec:SHELL_execute flags ignored: 0x00000100
+
+(pcmanfm:2004): Gdk-WARNING **: 15:10:09.301: gdk_window_set_icon_list: icons too large
+user error (Error in function getWindowAttributes)
+user error (Error in function getWindowAttributes)
+
+** (pcmanfm:2146): WARNING **: 15:12:33.679: The directory '~/Templates' doesn't exist, ignoring it
+
+(pcmanfm:2146): Gdk-WARNING **: 15:12:33.725: gdk_window_set_icon_list: icons too large
+user error (Error in function getWindowAttributes)
+user error (Error in function getWindowAttributes)
+error: The metadata does not have a thumbnail property
+error: The metadata does not have a thumbnail property
+user error (Error in function getWindowAttributes)
+user error (Error in function getWindowAttributes)
+
+** (pcmanfm:2417): WARNING **: 15:19:59.961: The directory '~/Templates' doesn't exist, ignoring it
+
+(pcmanfm:2417): Gdk-WARNING **: 15:20:00.008: gdk_window_set_icon_list: icons too large
+user error (Error in function getWindowAttributes)
+env WINEPREFIX="/home/cheddles/.wine" wine start /ProgIDOpen inifile '/home/cheddles/.gitconfig' 
+0050:fixme:x11settings:X11DRV_ChangeDisplaySettingsEx Changing non-primary adapter L"\\\\.\\DISPLAY2" settings is currently unsupported.
+env WINEPREFIX="/home/cheddles/.wine" wine start /ProgIDOpen inifile '/home/cheddles/.gitconfig' 
+0024:fixme:exec:SHELL_execute flags ignored: 0x00000100
+00c0:fixme:exec:SHELL_execute flags ignored: 0x00000100
+env WINEPREFIX="/home/cheddles/.wine" wine start /ProgIDOpen inifile '/home/cheddles/.gitconfig' 
+00d8:fixme:exec:SHELL_execute flags ignored: 0x00000100
+00e8:fixme:x11settings:X11DRV_ChangeDisplaySettingsEx Changing non-primary adapter L"\\\\.\\DISPLAY2" settings is currently unsupported.
+user error (Error in function getWindowAttributes)
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

@@ -1,0 +1,102 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 19])
+            ("ctype.h" include (:system-flag t) nil [20 37])
+            ("string" include (:system-flag t) nil [38 54])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [55 75])
+            ("isValidUppercaseStateCode" function
+               (:arguments 
+                  ( ("stateCode" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [109 126]))                  
+                :type "bool")
+                nil [78 561])
+            ("stuffandthings" function
+               (:arguments 
+                  ( ("whatshappening" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [582 604]))                  
+                :type "int")
+                nil [563 1291])
+            ("hasProperSyntax" function
+               (:arguments 
+                  ( ("omgwhat" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1314 1329]))                  
+                :type "bool")
+                nil [1293 1856])
+            ("countthings" function
+               (:arguments 
+                  ( ("ermahgerd" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1874 1891])
+                    ("suchwow" variable (:type "char") (reparse-symbol arg-sub-list) [1892 1905]))                  
+                :type "int")
+                nil [1858 2464])
+            ("tallySeats" function
+               (:arguments 
+                  ( ("pollData" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2484 2500])
+                    ("party" variable (:type "char") (reparse-symbol arg-sub-list) [2501 2512])
+                    ("seatTally" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2513 2528]))                  
+                :type "int")
+                nil [2469 2892])
+            ("main" function (:type "int") nil [2894 3231]))          
+      :file "poll.cpp~"
+      :pointmax 3237
+      :fsize 3236
+      :lastmodtime '(23512 1994 555251 162000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 19])
+            ("ctype.h" include (:system-flag t) nil [20 37])
+            ("string" include (:system-flag t) nil [38 54])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [55 75])
+            ("isValidUppercaseStateCode" function
+               (:arguments 
+                  ( ("stateCode" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [109 126]))                  
+                :type "bool")
+                nil [78 561])
+            ("stuffandthings" function
+               (:arguments 
+                  ( ("whatshappening" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [582 604]))                  
+                :type "int")
+                nil [563 1335])
+            ("hasProperSyntax" function
+               (:arguments 
+                  ( ("omgwhat" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1358 1373]))                  
+                :type "bool")
+                nil [1337 2000])
+            ("countthings" function
+               (:arguments 
+                  ( ("ermahgerd" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2018 2035])
+                    ("suchwow" variable (:type "char") (reparse-symbol arg-sub-list) [2036 2049]))                  
+                :type "int")
+                nil [2002 2608])
+            ("tallySeats" function
+               (:arguments 
+                  ( ("pollData" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2628 2644])
+                    ("party" variable (:type "char") (reparse-symbol arg-sub-list) [2645 2656])
+                    ("seatTally" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2657 2672]))                  
+                :type "int")
+                nil [2613 3112])
+            ("main" function (:type "int") nil [3114 3451]))          
+      :file "poll.cpp"
+      :pointmax 3452
+      :fsize 3451
+      :lastmodtime '(23513 14690 906211 241000)
+      :unmatched-syntax nil))
+  :file "!home!cheddles!Notes!CS31!Proj3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

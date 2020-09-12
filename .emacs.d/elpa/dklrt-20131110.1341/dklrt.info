@@ -1,0 +1,378 @@
+This is dklrt.info, produced by makeinfo version 6.5 from dklrt.texi.
+
+This manual is for emacs package dklrt version 1.00.
+
+   Copyright © 2010â2013 David Keegan.
+
+   May be redistributed under the terms of the Free Software Foundation
+GNU Free Documentation Licence.
+INFO-DIR-SECTION Emacs misc features
+START-INFO-DIR-ENTRY
+* Ledger Recurring Transactions: (dklrt).
+END-INFO-DIR-ENTRY
+
+
+File: dklrt.info,  Node: Top,  Next: Introduction,  Up: (dir)
+
+Ledger Recurring Transactions
+*****************************
+
+* Menu:
+
+* Introduction::
+* Configuration File::
+* Operations::
+* Index::
+
+
+File: dklrt.info,  Node: Introduction,  Next: Configuration File,  Prev: Top,  Up: Top
+
+1 Introduction
+**************
+
+An add-on to emacs ledger-mode which appends recurring transactions to
+the current ledger file, usually on entry to ledger-mode.  Recurring
+transactions are configured in a separate file which conforms to ledger
+file format and resides in the same directory as the ledger file.
+
+* Menu:
+
+* Overview::
+* Getting Started::
+* Known Issues::
+* Changes::
+
+
+File: dklrt.info,  Node: Overview,  Next: Getting Started,  Up: Introduction
+
+1.1 Overview
+============
+
+Recurring transactions are accounting transactions that repeat at
+regular intervals such as paychecks, standing orders, and pension
+contributions.  This emacs package facilitates entry of recurring
+transactions to a ledger file, the input file for John Wiegley’s ledger
+program.  *Note Overview: (ledger3)Top.
+
+   Operating as an add-on to emacs ledger-mode, the package appends
+recurring transactions to the current ledger file, usually on entry to
+‘ledger-mode’.  *Note Overview: (ledger-mode)Top.
+
+   Recurring transactions are configured in a separate file which
+conforms to ledger file format, and resides in the same directory as the
+ledger file.  *Note Configuration File::.
+
+
+File: dklrt.info,  Node: Getting Started,  Next: Known Issues,  Prev: Overview,  Up: Introduction
+
+1.2 Getting Started
+===================
+
+To append recurring transactions automatically on entry to
+‘ledger-mode’, add this line to your emacs profile:
+
+      (add-hook 'ledger-mode-hook 'dklrt-AppendRecurringMaybe)
+
+   To bind ‘\C-cr’ to ‘dklrt-AppendRecurringMaybe’ while in
+‘ledger-mode’ only, add this line to your emacs profile (optional):
+
+     (add-hook 'ledger-mode-hook 'dklrt-SetCcKeys)
+
+   If you want to have recurring transactions positioned by date in the
+ledger file, add this line to your emacs profile (optional):
+
+     (setq dklrt-SortAfterAppend t)
+
+   Note that as this causes the whole ledger buffer to be sorted after
+transactions are appended, it potentially affects the positions of all
+transactions.
+
+   Finally as the recurring transactions configuration file is a valid
+ledger file you may wish to edit it in ‘ledger-mode’.  If so add this to
+your emacs profile (optional):
+
+
+     (add-to-list 'auto-mode-alist '("\\.rec$" . ledger-mode))
+
+
+
+File: dklrt.info,  Node: Known Issues,  Next: Changes,  Prev: Getting Started,  Up: Introduction
+
+1.3 Known Issues
+================
+
+  1. In the recurring transactions configuration file, a transaction
+     date must be expressed in ISO format, eg “YYYY-MM-DD” or
+     “YYYY/MM/DD”.  This format is preserved when the transaction is
+     appended to the ledger file.  It is compatible with ledger’s
+     default date format, and should work with ‘ledger-mode’.
+
+     Problems can be expected if –input-date-format has been configured
+     with a non-ISO format in the ledger init file (.ledgerrc) or on the
+     ledger command line.
+
+  2. The handling if repetition intervals specified in the configuration
+     file with unit ‘m’ (month) or ‘y’ (year) is not ideal when their
+     application results in an invalid calendar day or a potentially
+     invalid day.  In these situations, the configured day is adjusted
+     back to ‘28’ to ensure validity, and remains at ‘28’ for all future
+     recurrences.
+
+     For example, a monthly recurring transaction initially configured
+     as _Jan 31_ in the configuration file produces recurrences in the
+     ledger file of _Jan 31_, _Feb 28_, _Mar 28_, _Apr 28_, and so on.
+
+     Ideally day 31 should be preserved in the configuration file
+     (perhaps in a comment), and the days emitted to the ledger file
+     should be as close as possible to 31 as the calendar permits.
+
+     Note that the current implementation does ensure that only valid
+     calendar dates occur in both the configuration and ledger files.
+
+  3. The emacs code depends on some python code which is included in the
+     package (and requires that python is installed on the system).  The
+     python executable is customisable via variable
+     ‘dklrt-PythonProgram’.
+
+
+File: dklrt.info,  Node: Changes,  Prev: Known Issues,  Up: Introduction
+
+1.4 Changes
+===========
+
+Package dklrt was developed mostly between 2011-06-08 and 2011-08-17.
+
+Version 1.00 20131104:
+     Initial release as package.
+
+
+File: dklrt.info,  Node: Configuration File,  Next: Operations,  Prev: Introduction,  Up: Top
+
+2 Configuration File
+********************
+
+Recurring transactions for a particular ledger file are configured in a
+separate file.  The configuration file is in the same directory as the
+ledger file, and its filename is the same as that of the ledger file
+except that the ledger file suffix is replaced by ‘.rec’.  The suffix is
+customisable via variable ‘dklrt-RecurringConfigFileSuffix’.
+
+* Menu:
+
+* Format::
+* Date and Period::
+* Restrictions::
+
+
+File: dklrt.info,  Node: Format,  Next: Date and Period,  Up: Configuration File
+
+2.1 Format
+==========
+
+The configuration file contains one or more transactions in ledger file
+format.  For example:
+
+
+2013-11-10 (1m) Payee Details
+    ; Transaction Note.
+    Asset:Bank:Current                       €-10.00  ; [=2013-11-08]
+    Expense:Phone                             €10.00  ; Payee: Eircom.
+    (Asset:OwedBy:Partner)                    €10.00
+    ; Posting Note2.
+
+2013-12-01 (1w) Payee8
+    Asset:Bank:Savings                       €200.00
+    Expense:SavingPlan
+
+
+   Each transaction date is followed by a repetition period in the
+position normally occupied by a ledger transaction code.
+
+   A transaction is considered to begin with a transaction date at the
+beginning of a line, and includes the remainder of the line and all
+subsequent lines up to but excluding the next transaction date.  The
+transaction date in the configuration file controls when the transaction
+becomes due for appending to the ledger file, and becomes the actual
+date of the appended transaction.
+
+
+File: dklrt.info,  Node: Date and Period,  Next: Restrictions,  Prev: Format,  Up: Configuration File
+
+2.2 Date and Period
+===================
+
+The transaction date must be in ISO format: “YYYY-MM-DD” or
+“YYYY/MM/DD”.
+
+   A parenthesised transaction repetition period must follow the date in
+the position where a ledger transaction “code” would normally occur.  It
+is surrounded by whitespace and is in the following format:
+
+(<Count><Unit>)
+
+Where:
+
+‘Count’
+     An unsigned decimal integer.
+
+‘Unit’
+     A single character specifying a unit and following immediately
+     after ‘Count’ without intervening space.  The following values are
+     accepted for ‘Unit’:
+
+     ‘d’
+          A fixed interval of ‘Count’ days.
+
+     ‘w’
+          A fixed interval ‘Count’ weeks.
+
+     ‘m’
+          The interval to the same day ‘Count’ months later, but if this
+          results in an invalid calendar day (eg Feb 31), the day is
+          shifted back until valid (eg to Feb 28).
+
+     ‘y’
+          The interval to the same day and month ‘Count’ years later,
+          but if this results in an invalid calendar day (eg Feb29), the
+          day is shifted back until valid (eg to Feb 28).
+
+
+File: dklrt.info,  Node: Restrictions,  Prev: Date and Period,  Up: Configuration File
+
+2.3 Restrictions
+================
+
+The recurring transactions configuration file must not contain any of
+the following ledger constructs:
+
+  1. Stand-alone comment (ie not part of a transaction).
+
+  2. Historical commodity price (starts with “P”).
+
+  3. Automated transaction (starts with “=”).
+
+  4. Period transaction (starts with “~”).
+
+  5. Command directive.
+
+   In addition the following restrictions apply to the the initial
+(date/payee) line of each transaction:
+
+  1. The transaction date must _not_ have an effective/auxiliary date
+     suffix (of the form “=YYYY-MM-DD”).
+
+  2. A transaction state/clear flag (immediately after the date) is
+     _not_ permitted.
+
+
+File: dklrt.info,  Node: Operations,  Next: Index,  Prev: Configuration File,  Up: Top
+
+3 Operations
+************
+
+The main entry point is function ‘dklrt-AppendRecurringMaybe’.  This is
+normally configured to run automatically on entry to ‘ledger-mode’.  It
+can also be bound to a key (‘\C-cr’ is suggested).
+
+   Function ‘dklrt-AppendRecurringMaybe’ does nothing unless all the
+following conditions are met:
+
+  1. The current buffer is in ‘ledger-mode’.
+
+  2. The current buffer is unmodified.
+
+  3. The ledger file associated with the current buffer exists.
+
+  4. The current file is _not_ a recurring transaction configuration
+     file (ie does not have suffix ‘.rec’).
+
+  5. A recurring transaction configuration file exists for the current
+     ledger file (same directory and basename, but with suffix ‘.rec’).
+
+   If all the conditions are met, recurring transactions are read from
+the configuration file and their dates are compared with the current
+date to determine if they are “due”.
+
+   By default, a recurring transaction becomes due up to one day before
+its transaction date.  This is customisable via variable
+‘dklrt-AppendBefore’.
+
+   If a transaction is considered “due”, it is appended to the ledger
+file.  The append includes the full transaction text as it appears in
+the configuration file, except that the repetition period (including
+enclosing parentheses) is removed.  The configuration file transaction
+date is then shifted forward by the repetition period and again compared
+with the current date.  If the recurring transaction is still “due”, it
+is appended again to the ledger file.  The process repeats until the
+recurring transaction is no longer “due”.
+
+   Finally the recurring transaction is written back to the
+configuration file with its new transaction date.
+
+   After recurring transactions have been appended, the ledger file can
+optionally be sorted to keep transactions ordered by date.  This
+behaviour is customisable via variable ‘dklrt-SortAfterAppend’.
+
+
+File: dklrt.info,  Node: Index,  Prev: Operations,  Up: Top
+
+4 Index
+*******
+
+ [index ]
+* Menu:
+
+* append due time:                       Operations.           (line 29)
+* append pre-conditions:                 Operations.           (line 10)
+* appended transaction:                  Operations.           (line 33)
+* configuration file:                    Overview.             (line 16)
+* configuration file <1>:                Configuration File.   (line  6)
+* date, transaction:                     Date and Period.      (line  6)
+* dklrt-AppendBefore:                    Operations.           (line 29)
+* dklrt-AppendRecurringMaybe:            Operations.           (line  6)
+* dklrt-PythonProgram:                   Known Issues.         (line 34)
+* dklrt-RecurringConfigFileSuffix:       Configuration File.   (line  6)
+* dklrt-SetCcKeys:                       Getting Started.      (line 14)
+* dklrt-SortAfterAppend:                 Getting Started.      (line 16)
+* dklrt-SortAfterAppend <1>:             Operations.           (line 45)
+* due time, append:                      Operations.           (line 29)
+* file, configuration:                   Configuration File.   (line  6)
+* interval, repetition:                  Date and Period.      (line  9)
+* issues:                                Known Issues.         (line  6)
+* ledger:                                Overview.             (line  6)
+* ledger-mode:                           Overview.             (line 12)
+* limitations:                           Known Issues.         (line  6)
+* period, repetition:                    Date and Period.      (line  9)
+* pre-conditions, append:                Operations.           (line 10)
+* recurring transactions:                Overview.             (line  6)
+* repetition interval:                   Date and Period.      (line  9)
+* repetition period:                     Date and Period.      (line  9)
+* restrictions, configuration file:      Restrictions.         (line  6)
+* restrictions, transaction date/payee line: Restrictions.     (line 19)
+* sort transactions:                     Operations.           (line 45)
+* transaction date:                      Date and Period.      (line  6)
+* transaction, appended:                 Operations.           (line 33)
+* transactions, recurring:               Overview.             (line  6)
+
+
+
+Tag Table:
+Node: Top395
+Node: Introduction596
+Node: Overview1068
+Node: Getting Started1864
+Node: Known Issues2953
+Node: Changes4785
+Node: Configuration File5014
+Node: Format5567
+Node: Date and Period6659
+Node: Restrictions7909
+Node: Operations8690
+Node: Index10744
+
+End Tag Table
+
+
+Local Variables:
+coding: utf-8
+End:

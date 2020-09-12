@@ -1,0 +1,39 @@
+
+xmonad.hs:29:1: warning: [-Wtabs]
+    Tab character found here, and in 130 further locations.
+    Please use spaces instead.
+   |
+29 |           where fadeAmount = 0.8
+   | ^^^^^^^^
+
+xmonad.hs:34:12: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+34 |   xmonad $ defaultConfig
+   |            ^^^^^^^^^^^^^
+
+xmonad.hs:36:66: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+36 |        , manageHook = manageDocks <+> manageSpawn <+> manageHook defaultConfig
+   |                                                                  ^^^^^^^^^^^^^
+
+xmonad.hs:37:44: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+37 |        , handleEventHook = handleEventHook defaultConfig <+> fullscreenEventHook <+> docksEventHook
+   |                                            ^^^^^^^^^^^^^
+
+xmonad.hs:38:64: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+38 |        , layoutHook =  smartBorders $ avoidStruts $ layoutHook defaultConfig
+   |                                                                ^^^^^^^^^^^^^

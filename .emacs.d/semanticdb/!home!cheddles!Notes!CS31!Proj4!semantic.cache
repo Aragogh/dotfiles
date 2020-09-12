@@ -1,0 +1,143 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 19])
+            ("ctype.h" include (:system-flag t) nil [20 37])
+            ("string" include (:system-flag t) nil [38 54])
+            ("cassert" include (:system-flag t) nil [55 72])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [73 93])
+            ("appendToAll" function
+               (:arguments 
+                  ( ("a" variable
+                       (:dereference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111 122])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [123 129])
+                    ("value" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130 143]))                  
+                :type "int")
+                nil [95 279])
+            ("lookup" function
+               (:arguments 
+                  ( ("a" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [292 309])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [310 316])
+                    ("target" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [317 331]))                  
+                :type "int")
+                nil [281 509])
+            ("flip" function
+               (:arguments 
+                  ( ("a" variable
+                       (:dereference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [520 531])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [532 538]))                  
+                :type "int")
+                nil [511 971])
+            ("positionOfMax" function
+               (:arguments 
+                  ( ("a" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [991 1008])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1009 1015]))                  
+                :type "int")
+                nil [973 1269])
+            ("lookupAny" function
+               (:arguments 
+                  ( ("a1" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1286 1304])
+                    ("n1" variable (:type "int") (reparse-symbol arg-sub-list) [1305 1312])
+                    ("a2" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1313 1331])
+                    ("n2" variable (:type "int") (reparse-symbol arg-sub-list) [1332 1339]))                  
+                :type "int")
+                nil [1272 1686])
+            ("differ" function
+               (:arguments 
+                  ( ("a1" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1699 1717])
+                    ("n1" variable (:type "int") (reparse-symbol arg-sub-list) [1718 1725])
+                    ("a2" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1726 1744])
+                    ("n2" variable (:type "int") (reparse-symbol arg-sub-list) [1745 1752]))                  
+                :type "int")
+                nil [1688 1959])
+            ("rotateLeft" function
+               (:arguments 
+                  ( ("a" variable
+                       (:dereference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1976 1987])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1988 1994])
+                    ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [1995 2003]))                  
+                :type "int")
+                nil [1961 2268])
+            ("divide" function
+               (:arguments 
+                  ( ("a" variable
+                       (:dereference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2281 2292])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2293 2299])
+                    ("divider" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2300 2315]))                  
+                :type "int")
+                nil [2270 2823])
+            ("countRuns" function
+               (:arguments 
+                  ( ("a" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2839 2856])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2857 2863]))                  
+                :type "int")
+                nil [2825 3001])
+            ("subsequence" function
+               (:arguments 
+                  ( ("a1" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3019 3037])
+                    ("n1" variable (:type "int") (reparse-symbol arg-sub-list) [3038 3045])
+                    ("a2" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3046 3064])
+                    ("n2" variable (:type "int") (reparse-symbol arg-sub-list) [3065 3072]))                  
+                :type "int")
+                nil [3003 3526])
+            ("main" function (:type "int") nil [3528 4478]))          
+      :file "array.cpp"
+      :pointmax 4483
+      :fsize 4482
+      :lastmodtime '(23522 26756 204680 611000)
+      :unmatched-syntax nil))
+  :file "!home!cheddles!Notes!CS31!Proj4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

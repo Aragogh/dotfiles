@@ -1,0 +1,44 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [49 69])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [71 91])
+            ("main" function (:type "int") nil [144 1018]))          
+      :file "original.cpp"
+      :pointmax 1028
+      :fsize 1027
+      :lastmodtime '(23483 37762 523104 659000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [49 69])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [71 91])
+            ("main" function (:type "int") nil [144 1015]))          
+      :file "logic_error.cpp"
+      :pointmax 1016
+      :fsize 1015
+      :lastmodtime '(23484 11922 874982 750000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "compile_error.cpp"
+      :pointmax 1015
+      :fsize 1014
+      :lastmodtime '(23484 12111 78972 339000)
+      :unmatched-syntax nil))
+  :file "!home!cheddles!Notes!CS31!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

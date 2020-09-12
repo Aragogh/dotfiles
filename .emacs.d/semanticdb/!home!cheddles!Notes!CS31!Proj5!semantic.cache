@@ -1,0 +1,175 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_CRT_SECURE_NO_WARNINGS" variable (:constant-flag t) nil [9 32])
+            ("iostream" include (:system-flag t) nil [33 51])
+            ("cstring" include (:system-flag t) nil [52 69])
+            ("cctype" include (:system-flag t) nil [70 86])
+            ("cassert" include (:system-flag t) nil [87 104])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [105 125])
+            ("MAX_WORD_LENGTH" variable
+               (:constant-flag t
+                :default-value "20"
+                :type "int")
+                nil [127 158])
+            ("killrow" function
+               (:arguments 
+                  ( ("a1" variable
+                       (:dereference 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [173 202])
+                    ("a2" variable
+                       (:dereference 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [203 232])
+                    ("b" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [233 241])
+                    ("n" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [242 249])
+                    ("row" variable (:type "int") (reparse-symbol arg-sub-list) [250 258]))                  
+                :type "void")
+                nil [160 452])
+            ("fuzzyStrCmp" function
+               (:arguments 
+                  ( ("a1" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [471 481])
+                    ("a2" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [482 492]))                  
+                :type "bool")
+                nil [454 824])
+            ("isWord" function
+               (:arguments 
+                  ( ("word1" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [838 851]))                  
+                :type "bool")
+                nil [826 1046])
+            ("checkifdupe" function
+               (:arguments 
+                  ( ("word1" variable
+                       (:dereference 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1065 1097])
+                    ("word2" variable
+                       (:dereference 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1098 1130])
+                    ("separation" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1131 1148])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1149 1155])
+                    ("f" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1156 1163]))                  
+                :type "bool")
+                nil [1048 1559])
+            ("makeProper" function
+               (:arguments 
+                  ( ("word1" variable
+                       (:dereference 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1576 1608])
+                    ("word2" variable
+                       (:dereference 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1609 1641])
+                    ("separation" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1642 1659])
+                    ("nPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [1660 1674]))                  
+                :type "int")
+                nil [1561 2297])
+            ("documentWords" function
+               (:arguments 
+                  ( ("document" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2317 2339])
+                    ("a" variable
+                       (:dereference 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2340 2368]))                  
+                :type "int")
+                nil [2299 3449])
+            ("ratePattern" function
+               (:arguments 
+                  ( ("document" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3467 3489])
+                    ("a1" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3490 3523])
+                    ("a2" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3524 3557])
+                    ("separation" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3558 3579]))                  
+                :type "int")
+                nil [3451 4433])
+            ("rate" function
+               (:arguments 
+                  ( ("document" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4444 4466])
+                    ("word1" variable
+                       (:dereference 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4467 4505])
+                    ("word2" variable
+                       (:dereference 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4506 4544])
+                    ("separation" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4545 4568])
+                    ("nPatterns" variable (:type "int") (reparse-symbol arg-sub-list) [4569 4583]))                  
+                :type "int")
+                nil [4435 4726])
+            ("main" function (:type "int") nil [4728 6813]))          
+      :file "rate.cpp"
+      :pointmax 6813
+      :fsize 6812
+      :lastmodtime '(23539 42019 450412 526000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_CRT_SECURE_NO_WARNINGS")
+          )
+))
+  :file "!home!cheddles!Notes!CS31!Proj5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

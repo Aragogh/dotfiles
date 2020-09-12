@@ -1,0 +1,22 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [21 41])
+            ("main" function (:type "int") nil [43 3751]))          
+      :file "rental.cpp"
+      :pointmax 3752
+      :fsize 3751
+      :lastmodtime '(23496 60845 475560 732000)
+      :unmatched-syntax nil))
+  :file "!home!cheddles!Notes!CS31!Proj2!AnishChedalavadaProject2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
