@@ -44,3 +44,10 @@ DEADLINE: <2021-06-02 Wed 11:00 CDT +1w>
 
   
 
+**** UChicago-Northwestern Altop Seminar
+:PROPERTIES:
+:ID:       1d9f01ae-2847-4b46-ac2d-9a63d5e0473c
+:TIMEZONE: America/Chicago
+:END:
+<2020-10-06 Tue 16:00 CDT-17:00 +1w> 
+

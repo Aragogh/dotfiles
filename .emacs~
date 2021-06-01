@@ -345,4 +345,5 @@ Brief description:
 	          (when (eq major-mode 'org-mode)
 		    (org-caldav-sync-with-delay 300))))
 
-(setq org-agenda-hide-tags-regexp "work\\|self\\|life")
+;;(add-hook 'after-save-hook 'my-after-save-actions)
+
