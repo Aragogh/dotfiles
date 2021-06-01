@@ -13,7 +13,7 @@
   (add-to-list
    'package-archives
    ;; '("melpa" . "http://stable.melpa.org/packages/") ; many packages won't show if using stable
-   '("melpa" . "http://melpa.milkbox.net/packages/") 
+   '("melpa" . "http://melpa.org/packages/") 
    t)
   (add-to-list
    'package-archives
@@ -35,34 +35,33 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(TeX-engine (quote luatex))
+ '(TeX-engine 'default)
  '(custom-safe-themes
-   (quote
-    ("2809bcb77ad21312897b541134981282dc455ccd7c14d74cc333b6e549b824f3" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+   '("2809bcb77ad21312897b541134981282dc455ccd7c14d74cc333b6e549b824f3" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default))
  '(display-time-24hr-format t)
  '(display-time-day-and-date t)
  '(display-time-mode t)
+ '(display-time-world-list nil)
  '(haskell-process-auto-import-loaded-modules t)
  '(haskell-process-log t)
  '(haskell-process-suggest-remove-import-lines t)
  '(ledger-accounts-file nil)
  '(ledger-reports
-   (quote
-    (("bal" "ledger [[ledger-mode-flags]] -f /home/cheddles/accounts.ledger bal")
+   '(("bal" "ledger [[ledger-mode-flags]] -f /home/cheddles/accounts.ledger bal")
      ("bal" "%(binary) -f %(ledger-file) bal")
      ("reg" "%(binary) -f %(ledger-file) reg")
      ("payee" "%(binary) -f %(ledger-file) reg @%(payee)")
-     ("account" "%(binary) -f %(ledger-file) reg %(account)"))))
- '(org-agenda-files (quote ("~/Notes/Org/todo.org" "~/Notes/Org/notes.org")))
- '(org-babel-load-languages (quote ((emacs-lisp . t) (latex . t))))
+     ("account" "%(binary) -f %(ledger-file) reg %(account)")))
+ '(org-agenda-files
+   '("~/storage/Nextcloud/Notes/Org/todo.org" "~/storage/Nextcloud/Notes/Org/notes.org"))
+ '(org-babel-load-languages '((emacs-lisp . t) (latex . t)))
  '(org-capture-templates
-   (quote
-    (("t" "TODO" entry
-      (file "~/Notes/Org/todo.org")
+   '(("t" "TODO" entry
+      (file "~/storage/Nextcloud/Notes/Org/todo.org")
       "* TODO %?
 " :prepend t :empty-lines 1)
      ("n" "Notes" entry
-      (file "~/Notes/Org/notes.org")
+      (file "~/storage/Nextcloud/Notes/Org/notes.org")
       "* %^{Title} %^g 
 :PROPERTIES:
 :Created: %U
@@ -72,22 +71,19 @@
 Brief description:
 %?" :prepend t :empty-lines 1 :created t)
      ("j" "jot" entry
-      (file "~/Notes/Org/notes.org")
-      "* %?" :empty-lines 1))) t)
+      (file "~/storage/Nextcloud/Notes/Org/notes.org")
+      "* %?" :empty-lines 1)) t)
  '(org-export-with-latex t)
  '(org-format-latex-options
-   (quote
-    (:foreground default :background default :scale 1.3 :html-foreground "Black" :html-background "Transparent" :html-scale 1.0 :matchers
-		 ("begin" "$1" "$" "$$" "\\(" "\\["))))
- '(org-html-with-latex (quote mathjax))
- '(org-latex-packages-alist (quote (("" "tikz-cd" t))))
+   '(:foreground default :background default :scale 1.3 :html-foreground "Black" :html-background "Transparent" :html-scale 1.0 :matchers
+		 ("begin" "$1" "$" "$$" "\\(" "\\[")))
+ '(org-html-with-latex 'mathjax)
+ '(org-latex-packages-alist '(("" "tikz-cd" t)))
  '(org-latex-pdf-process
-   (quote
-    ("%latex -interaction nonstopmode -output-directory %o %f" "%latex -interaction nonstopmode -output-directory %o %f" "%latex -interaction nonstopmode -output-directory %o %f")))
- '(org-preview-latex-default-process (quote dvisvgm))
+   '("%latex -interaction nonstopmode -output-directory %o %f" "%latex -interaction nonstopmode -output-directory %o %f" "%latex -interaction nonstopmode -output-directory %o %f"))
+ '(org-preview-latex-default-process 'dvisvgm)
  '(org-preview-latex-process-alist
-   (quote
-    ((dvipng :programs
+   '((dvipng :programs
 	     ("latex" "dvipng")
 	     :description "dvi > png" :message "you need to install the programs: latex and dvipng." :image-input-type "dvi" :image-output-type "png" :image-size-adjust
 	     (1.0 . 1.0)
@@ -110,72 +106,55 @@ Brief description:
 		  :latex-compiler
 		  ("pdflatex -interaction nonstopmode -output-directory %o %f")
 		  :image-converter
-		  ("convert -density %D -trim -antialias %f -quality 100 %O")))))
- '(org-ref-get-pdf-filename-function (quote org-ref-get-pdf-filename-helm-bibtex))
- '(org-refile-targets (quote ((org-agenda-files :maxlevel . 2))))
+		  ("convert -density %D -trim -antialias %f -quality 100 %O"))))
+ '(org-ref-get-pdf-filename-function 'org-ref-get-pdf-filename-helm-bibtex)
+ '(org-refile-targets '((org-agenda-files :maxlevel . 2)))
  '(org-refile-use-outline-path t)
  '(org-todo-keywords
-   (quote
-    ((sequence "TODO(t)" "ONGOING(o)" "WAITING(w@/!)" "ON HOLD(h@)" "|" "DONE(d!)" "CANCELLED(c!)"))))
+   '((sequence "TODO(t)" "ONGOING(o)" "WAITING(w@/!)" "ON HOLD(h@)" "|" "DONE(d!)" "CANCELLED(c!)")))
  '(org-use-fast-todo-selection t)
  '(package-selected-packages
-   (quote
-    (org-noter-pdftools org-ref org-noter dklrt ledger-mode openwith pdf-tools znc counsel ivy ivy-bibtex ctable proof-general company-coq ess ess-R-data-view ess-smart-underscore function-args cdlatex auctex auctex-latexmk auctex-lua org-bullets org-brain org solarized-theme haskell-mode)))
+   '(org-agenda-property org-caldav ivy-bibtex org-ref org-noter-pdftools org-noter dklrt ledger-mode openwith pdf-tools znc counsel ivy ctable proof-general company-coq ess ess-R-data-view ess-smart-underscore function-args cdlatex auctex auctex-latexmk auctex-lua org-bullets org-brain org solarized-theme haskell-mode))
  '(safe-local-variable-values
-   (quote
-    ((eval let
+   '((eval let
 	   ((unimath-topdir
 	     (expand-file-name
 	      (locate-dominating-file buffer-file-name "UniMath"))))
 	   (setq fill-column 100)
-	   (make-local-variable
-	    (quote coq-use-project-file))
+	   (make-local-variable 'coq-use-project-file)
 	   (setq coq-use-project-file nil)
-	   (make-local-variable
-	    (quote coq-prog-args))
+	   (make-local-variable 'coq-prog-args)
 	   (setq coq-prog-args
-		 (\`
-		  ("-emacs" "-noinit" "-indices-matter" "-type-in-type" "-w" "-notation-overridden" "-Q"
-		   (\,
-		    (concat unimath-topdir "UniMath"))
-		   "UniMath")))
-	   (make-local-variable
-	    (quote coq-prog-name))
+		 `("-emacs" "-noinit" "-indices-matter" "-type-in-type" "-w" "-notation-overridden" "-Q" ,(concat unimath-topdir "UniMath")
+		   "UniMath"))
+	   (make-local-variable 'coq-prog-name)
 	   (setq coq-prog-name
 		 (concat unimath-topdir "sub/coq/bin/coqtop"))
-	   (make-local-variable
-	    (quote before-save-hook))
-	   (add-hook
-	    (quote before-save-hook)
-	    (quote delete-trailing-whitespace))
+	   (make-local-variable 'before-save-hook)
+	   (add-hook 'before-save-hook 'delete-trailing-whitespace)
 	   (modify-syntax-entry 39 "w")
 	   (modify-syntax-entry 95 "w")
 	   (if
 	       (not
-		(memq
-		 (quote agda-input)
-		 features))
+		(memq 'agda-input features))
 	       (load
 		(concat unimath-topdir "emacs/agda/agda-input")))
 	   (if
 	       (not
 		(member
-		 (quote
-		  ("chimney" "╝"))
+		 '("chimney" "╝")
 		 agda-input-user-translations))
 	       (progn
 		 (setq agda-input-user-translations
 		       (cons
-			(quote
-			 ("chimney" "╝"))
+			'("chimney" "╝")
 			agda-input-user-translations))
 		 (setq agda-input-user-translations
 		       (cons
-			(quote
-			 ("==>" "⟹"))
+			'("==>" "⟹")
 			agda-input-user-translations))
 		 (agda-input-setup)))
-	   (set-input-method "Agda"))))))
+	   (set-input-method "Agda")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -266,22 +245,22 @@ Brief description:
 (pdf-tools-install)
 
 ;; org bindings
-(global-set-key (kbd "C-c g o") (lambda () (interactive) (dired "~/Notes/Org")))
+(global-set-key (kbd "C-c g o") (lambda () (interactive) (dired "~/storage/Nextcloud/Notes/Org")))
 
-(setq org-agenda-files (list  "~/Notes/Org/todo.org" "~/Notes/Org/notes.org"))
+(setq org-agenda-files (list  "~/storage/Nextcloud/Notes/Org/todo.org" "~/storage/Nextcloud/Notes/Org/notes.org" "~/storage/Nextcloud/Notes/Org/caldav.org"))
 
-(find-file "~/Notes/Org/todo.org") 
+(find-file "~/storage/Nextcloud/Notes/Org/todo.org") 
 
-(setq org-directory "~/Notes/Org")
-(setq org-default-notes-files "~/Notes/Org/notes.org")
+(setq org-directory "~/storage/Nextcloud/Notes/Org")
+(setq org-default-notes-files "~/storage/Nextcloud/Notes/Org/notes.org")
 (setq org-agenda-inhibit-startup t)
 (setq org-capture-templates
-      '(("t" "todo" entry (file "~/Notes/Org/todo.org")
+      '(("t" "todo" entry (file "~/storage/Nextcloud/Notes/Org/todo.org")
          "* TODO %?\n")
         ("n"               ; key
 	 "Notes"         ; name
 	 entry             ; type
-	 (file "~/Notes/Org/notes.org")  ; target
+	 (file "~/storage/Nextcloud/Notes/Org/notes.org")  ; target
 	 "* %^{Title} %^g \n:PROPERTIES:\n:Created: %U\n:Linked: %a\n:END: \n%i\nBrief description:\n%?"  ; template
 	 :prepend t        ; properties
 	 :empty-lines 1    ; properties
@@ -296,14 +275,14 @@ Brief description:
             (setq-local completion-cycle-threshold t)
             (setq-local ledger-complete-in-steps t)))
 
-(setq ledger-schedule-file "~/Notes/Ledger/ledger-schedule.ledger")
+(setq ledger-schedule-file "~/storage/Nextcloud/Notes/Ledger/ledger-schedule.ledger")
 
-(setq org-ref-bibliography-notes "~/Notes/references/references.org"
-      org-ref-default-bibliography '("~/Notes/references/references.bib"))
+(setq org-ref-bibliography-notes "~/storage/Nextcloud/Notes/references/references.org"
+      org-ref-default-bibliography '("~/storage/Nextcloud/Notes/references/references.bib"))
 
-(setq bibtex-completion-bibliography '("~/Notes/references/references.bib"))
+(setq bibtex-completion-bibliography '("~/storage/Nextcloud/Notes/references/references.bib"))
 (setq bibtex-completion-pdf-field "file")
-(setq bibtex-completion-notes-path "~/Notes/MyNotes")
+(setq bibtex-completion-notes-path "~/storage/Nextcloud/Notes/MyNotes")
 
 
 (setq org-todo-keywords
@@ -315,4 +294,32 @@ Brief description:
 (eval-after-load "preview"
   '(add-to-list 'preview-default-preamble "\\PreviewEnvironment{tikzcd}" t))
 
+(setq org-agenda-default-appointment-duration 60)
+
+(setq org-caldav-files org-agenda-files)
+(setq org-caldav-inbox "~/storage/Nextcloud/Notes/Org/caldav.org")
+(setq org-caldav-url "https://nephele.itihas.review/remote.php/dav/calendars/aragogh")
+
+;; Actual calendar configuration edit this to meet your specific needs
+(setq org-caldav-calendars
+      '((:calendar-id "personal")))
+
+(setq org-icalendar-alarm-time 1)
+;; This makes sure to-do items as a category can show up on the calendar
+(setq org-icalendar-include-todo t)
+;; This ensures all org "deadlines" show up, and show up as due dates
+(setq org-icalendar-use-deadline '(event-if-todo event-if-not-todo todo-due))
+;; This ensures "scheduled" org items show up, and show up as start times
+(setq org-icalendar-use-scheduled '(todo-start event-if-todo event-if-not-todo))
+;; Add the delayed save hook with a five minute idle timer
+
+(setq org-agenda-property-list '("TIMEZONE"))
+
+(defun my-after-save-actions ()
+  (when (eq major-mode 'org-mode)
+    (org-caldav-sync)
+    )
+  )
+
+;;(add-hook 'after-save-hook 'my-after-save-actions)
 

@@ -15402,7 +15402,7 @@ but in some other way.")
     "EXPORT_OPTIONS" "EXPORT_TEXT" "EXPORT_FILE_NAME"
     "EXPORT_TITLE" "EXPORT_AUTHOR" "EXPORT_DATE" "UNNUMBERED"
     "ORDERED" "NOBLOCKING" "COOKIE_DATA" "LOG_INTO_DRAWER" "REPEAT_TO_STATE"
-    "CLOCK_MODELINE_TOTAL" "STYLE" "HTML_CONTAINER_CLASS")
+    "CLOCK_MODELINE_TOTAL" "STYLE" "HTML_CONTAINER_CLASS" "TIMEZONE")
   "Some properties that are used by Org mode for various purposes.
 Being in this list makes sure that they are offered for completion.")
 

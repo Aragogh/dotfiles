@@ -1,0 +1,46 @@
+***** TODO HHS Operadic Structures and Higher Calculus
+SCHEDULED: <2021-06-21 Mon>-<2021-06-25 Fri>
+:PROPERTIES:
+:ID:       0813aafe-e768-4ba1-813f-7ab9c74fb388
+:END:
+
+
+**** UChicago-Northwestern Altop Seminar
+:PROPERTIES:
+:ID:       1d9f01ae-2847-4b46-ac2d-9a63d5e0473c
+:END:
+<2020-10-06 Tue 16:00 CDT-17:00 +1w> 
+
+**** TODO PCMI Motivic Homotopy School
+SCHEDULED: <2021-07-12 Mon>-<2021-07-16 Fri>
+:PROPERTIES:
+:ID:       27f86539-9d1f-4713-9141-b347c6f7db02
+:END:
+
+
+***** TODO HHS Operadic Structures and Higher Calculus
+SCHEDULED: <2021-06-21 Mon>--<2021-06-25 Fri>
+:PROPERTIES:
+:ID:       0813aafe-e768-4ba1-813f-7ab9c74fb388
+:END:
+
+
+*** TODO Finish reading for Gepner
+DEADLINE: <2021-06-02 Wed 11:00 CDT +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-05-12 Wed 03:30 CDT]
+:ID:       3435264b-727a-406d-9b11-3b2c20905f03
+:TIMEZONE: America/Chicago
+:END:
+
+- State "DONE"       from "TODO"       [2021-05-12 Wed 03:30 CDT]
+- State "DONE"       from "TODO"       [2021-04-09 Fri 11:40 CDT]
+- State "DONE"       from "TODO"       [2021-04-03 Sat 13:20 CDT]
+- State "DONE"       from "TODO"       [2021-04-03 Sat 13:20 CDT]
+- State "DONE"       from "TODO"       [2021-03-20 Sat 11:57 CDT]
+- State "DONE"       from "TODO"       [2021-03-12 Fri 11:32 CDT]
+- State "DONE"       from "TODO"       [2021-03-06 Sat 12:20 CDT]
+- State "DONE"       from "TODO"       [2021-02-26 Fri 16:37 CDT]
+
+  
+

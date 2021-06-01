@@ -10,3 +10,5 @@ xss-lock -- xscreensaver-command -lock &
 feh --bg-fill /home/cheddles/background.png &
 
 exec xmonad
+
+emacs

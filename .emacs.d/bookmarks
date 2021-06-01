@@ -1,20 +1,20 @@
-;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*- 
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored-marker"
  (filename . "~/Notes/Org/notes.org")
- (front-context-string . "** Discrete Diff")
- (rear-context-string . "looking into.\n\n\n")
- (position . 2316))
+ (front-context-string . "** CRM Opening W")
+ (rear-context-string . "4066298940. \n\n\n\n")
+ (position . 6075))
 ("org-refile-last-stored"
- (filename . "~/Notes/Org/todo.org")
- (front-context-string . "** DONE Receive ")
- (rear-context-string . "r, 8666002273\n\n\n")
- (position . 10081))
+ (filename . "~/storage/Nextcloud/Notes/Org/notes.org")
+ (front-context-string . "** Ideas For Stu")
+ (rear-context-string . "ry slow decay\n\n\n")
+ (position . 8078))
 ("org-capture-last-stored"
  (filename . "~/Notes/Org/notes.org")
- (front-context-string . "* Discrete Diffe")
+ (front-context-string . "* CRM Opening Wo")
  (rear-context-string)
  (position . 3))
 )

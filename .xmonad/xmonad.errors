@@ -37,3 +37,4 @@ xmonad.hs:38:64: warning: [-Wdeprecations]
    |
 38 |        , layoutHook =  smartBorders $ avoidStruts $ layoutHook defaultConfig
    |                                                                ^^^^^^^^^^^^^
+xmonad.o.tmp: renameFile:renamePath:rename: does not exist (No such file or directory)
