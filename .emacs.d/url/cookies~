@@ -2,7 +2,9 @@
 ;; Automatically generated file!!! DO NOT EDIT!!!
 
 (setq url-cookie-storage
- 'nil)
+ '(("nephele.itihas.review"
+  [url-cookie "cookie_test" "test" "Tue Jun 01 12:49:19 2021 GMT" "/remote.php/dav/calendars/aragogh/personal/" "nephele.itihas.review" nil]))
+)
 (setq url-cookie-secure-storage
  '((".reddit.com"
   [url-cookie "loid" "00000000007u5k357c.2.1598293422963.Z0FBQUFBQmZSQVd1NHcwQkxhM0dON1JZTDJuMHc0aGFzWTlvRXVlVlZMMlcyRkxSWWIyTklqU2FTczBhSGJWSjBfamxUT2YtMVpBcjhKaERKa243NVdXMzVMRkkwVUZyMHk5N0M5MXpxVHY1R0FBdHJTcy1fVDVxNDhNSmszTHMzRE5BZ2ZtcGZnM2E" "Wed Aug 24 18:23:41 2022 GMT" "/" ".reddit.com" t]

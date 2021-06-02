@@ -299,16 +299,17 @@ Brief description:
 
 (setq org-caldav-files org-agenda-files)
 (setq org-caldav-inbox "~/storage/Nextcloud/Notes/Org/caldav.org")
-(setq org-caldav-url "https://nephele.itihas.review/remote.php/dav/calendars/aragogh")
+(setq org-caldav-url "https://petraia.itihas.review/remote.php/dav/calendars/aragogh/")
 
 ;; Actual calendar configuration edit this to meet your specific needs
 (setq org-caldav-calendars
-      '((:calendar-id "personal"
+      '((:calendar-id "work-1"
 		      :select-tags ("work"))
 	(:calendar-id "life"
 		      :select-tags ("life"))
 	(:calendar-id "self"
-		      :select-tags ("self"))))
+	:select-tags ("self"))
+	))
 
 (setq org-icalendar-alarm-time 1)
 ;; This makes sure to-do items as a category can show up on the calendar
@@ -345,4 +346,4 @@ Brief description:
 	          (when (eq major-mode 'org-mode)
 		    (org-caldav-sync-with-delay 300))))
 
-(setq org-agenda-hide-tags-regexp "work\\|self\\|life")
+(setq org-agenda-hide-tags-regexp "work\\|life\\|self")

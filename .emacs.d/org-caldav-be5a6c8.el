@@ -17,6 +17,8 @@
 ("c46e1f39-b335-465f-ac9c-8ff366d4e842" "527e65ffcca0129f5cfba1cebd436abe" "fad65412705ad6b4e82d8327075b152a" nil synced) 
 ("2b25d061-e040-4ba7-ad80-8048c1eede8d" "25c7971d5a0a10778c3aa1ac3be79c70" "2a1546245621a3177e3027b85515e828" nil synced) 
 ("ad81cf46-1ff1-4539-ba70-2fa1f77abae9" "b251cc29a31e6f1e882ae25d7324e9d1" "c75b37821166f78c143b836a4e823cf7" nil synced) 
-("cc5dd714-a089-4c97-8eac-1d8bdb18df7f" "c07b2750e1a6f3cae3e14428f59aadbd" "aa19b91ba57fe1d9217a90f287d36364" nil synced)))
+("cc5dd714-a089-4c97-8eac-1d8bdb18df7f" "c07b2750e1a6f3cae3e14428f59aadbd" "aa19b91ba57fe1d9217a90f287d36364" nil synced) 
+("4237904f-a0c9-4b18-91ac-082a8ff5b055" "b87f64e2ecb2c0f9125f12d8e099b01b" "4c13e9bd4793f192fa6ae5566f9343e6" nil synced) 
+("976dce60-a6d4-425b-abec-34f084f7dc80" "405ee76b91f49938014eed3690a115cf" "58aad732011b37478b56e497fb6d2f1e" nil synced)))
 
 (setq org-caldav-previous-files '("~/storage/Nextcloud/Notes/Org/todo.org" "~/storage/Nextcloud/Notes/Org/notes.org" "~/storage/Nextcloud/Notes/Org/caldav.org"))
