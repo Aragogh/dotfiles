@@ -51,3 +51,142 @@ DEADLINE: <2021-06-02 Wed 11:00 CDT +1w>
 :END:
 <2020-10-06 Tue 16:00 CDT-17:00 +1w> 
 
+****** TC and K-Theory of Henselian Pairs Reading Course Tuesdays
+:PROPERTIES:
+:ID:       2fcdb6d8-6db5-49cd-b923-a1be950c1a7b
+:TIMEZONE: America/Chicago
+:END:
+<2021-01-12 Tue 19:30 +1w>
+
+****** TC and K-Theory of Henselian Pairs Reading Course Thursdays
+:PROPERTIES:
+:ID:       042427ca-7a57-414b-8863-b1d1ffeb9eaf
+:TIMEZONE: America/Chicago
+:END:
+ <2021-01-14 Thu 19:30 +1w>
+
+**** Izzet Intersection Theory Reading Course
+:PROPERTIES:
+:TIMEZONE: America/Chicago
+:ID:       4237904f-a0c9-4b18-91ac-082a8ff5b055
+:END:
+<2021-06-02 Wed 9:00 +1w>
+
+***** Vesna Stojanoska,  Invertible objects in stable homotopy theory
+:PROPERTIES:
+:TIMEZONE: America/Chicago
+:ID:       7b44aec0-08a0-4296-b6ba-f90e928c1aae
+:END:
+<2021-06-01 Tue 11:00>
+
+***** Danny Shi, Real Bordism
+:PROPERTIES:
+:TIMEZONE: America/Chicago
+:ID:       0012b108-043c-435d-a87d-5c4f7c431bae
+:END:
+<2021-06-02 Wed 14:00>
+
+***** Lior Yanovski, Galois Extensions in Chromatic Homotopy Theory 
+:PROPERTIES:
+:TIMEZONE: America/Chicago
+:ID:       e4bbd489-902f-485d-a94e-d33c86a3946d
+:END:
+<2021-06-03 Thu 11:00>
+
+
+***** Jeremy Hahn, Construction of ring spectra 
+:PROPERTIES:
+:TIMEZONE: America/Chicago
+:ID:       c46e1f39-b335-465f-ac9c-8ff366d4e842
+:END:
+<2021-06-01 Tue 14:00>
+
+
+***** Emily Cliff, 2D Conformal Field Theory
+:PROPERTIES:
+:TIMEZONE: America/Chicago
+:ID:       2b25d061-e040-4ba7-ad80-8048c1eede8d
+:END:
+<2021-06-04 Fri 14:00>
+
+***** Maria Yakerson, K-Theory from a Motivic Perspective
+:PROPERTIES:
+:TIMEZONE: America/Chicago
+:ID:       ad81cf46-1ff1-4539-ba70-2fa1f77abae9
+:END:
+<2021-06-06 Sun 11:00>
+
+***** Mike Hill, Talbot Retrospective
+:PROPERTIES:
+:TIMEZONE: America/Chicago
+:ID:       cc5dd714-a089-4c97-8eac-1d8bdb18df7f
+:END:
+<2021-06-06 Sun 14:00>
+
+**** TODO PCMI Motivic Homotopy School
+SCHEDULED: <2021-07-12 Mon>--<2021-07-16 Fri>
+:PROPERTIES:
+:ID:       27f86539-9d1f-4713-9141-b347c6f7db02
+:END:
+
+***** TODO HHS Operadic Structures and Higher Calculus
+SCHEDULED: SCHEDULED: <2021-06-21 Mon>--<2021-06-25 Fri>
+:PROPERTIES:
+:ID:       0813aafe-e768-4ba1-813f-7ab9c74fb388
+:END:
+
+
+***** TODO HHS Derived Geometry
+SCHEDULED: <2022-06-06 Mon>--<2022-06-10 Fri>
+:PROPERTIES:
+:ID:       cd6b2011-31f4-4259-97e2-7c731fe4628d
+:END:
+
+***** TODO Barcelona Conference on Higher Structures
+SCHEDULED: <2022-06-20 Mon>--<2022-06-24 Fri>
+:PROPERTIES:
+:ID:       fe01da81-ee6a-4c98-a954-59a15c8a2f56
+:END:
+
+
+**** Orientation for SEW Instructors
+SCHEDULED: <2021-06-18 Fri 9:00>--<2021-06-18 Fri 15:00>
+:PROPERTIES:
+:TIMEZONE: America/Chicago
+:ID:       976dce60-a6d4-425b-abec-34f084f7dc80
+:END:
+
+
+*** TODO Finish reading for Gepner
+DEADLINE: <2021-06-02 Wed 11:00 CDT +1w>
+:PROPERTIES:
+:LAST_REPEAT: [2021-05-12 Wed 03:30 CDT]
+:ID:       3435264b-727a-406d-9b11-3b2c20905f03
+:TIMEZONE: America/Chicago
+:END:
+
+- State "DONE"       from "TODO"       [2021-05-12 Wed 03:30 CDT]
+- State "DONE"       from "TODO"       [2021-04-09 Fri 11:40 CDT]
+- State "DONE"       from "TODO"       [2021-04-03 Sat 13:20 CDT]
+- State "DONE"       from "TODO"       [2021-04-03 Sat 13:20 CDT]
+- State "DONE"       from "TODO"       [2021-03-20 Sat 11:57 CDT]
+- State "DONE"       from "TODO"       [2021-03-12 Fri 11:32 CDT]
+- State "DONE"       from "TODO"       [2021-03-06 Sat 12:20 CDT]
+- State "DONE"       from "TODO"       [2021-02-26 Fri 16:37 CDT]
+
+  
+
+**** Izzet Intersection Theory Reading Course
+:PROPERTIES:
+:TIMEZONE: America/Chicago
+:ID:       4237904f-a0c9-4b18-91ac-082a8ff5b055
+:END:
+<2021-06-02 Wed 9:00 +1w>
+
+****** SEW Math 090
+:PROPERTIES:
+:TIMEZONE: America/Chicago
+:ID:       e511bbe3-9fcc-4644-924c-9e3465c4fd40
+:END:
+<2021-06-21 Mon 14:00-17:00>
+

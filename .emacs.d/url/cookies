@@ -3,22 +3,22 @@
 
 (setq url-cookie-storage
  '(("petraia.itihas.review"
-  [url-cookie "cookie_test" "test" "Wed Jun 02 12:17:51 2021 GMT" "/remote.php/dav/calendars/aragogh//work/" "petraia.itihas.review" nil]))
+  [url-cookie "cookie_test" "test" "Thu Jul 01 11:35:08 2021 GMT" "/remote.php/dav/calendars/aragogh//work-1/" "petraia.itihas.review" nil]))
 )
 (setq url-cookie-secure-storage
- '(("reddit.com"
-  [url-cookie "edgebucket" "bXCGNhCedZGkNromQp" "Wed Aug 24 18:23:40 2022 GMT" "/" "reddit.com" t]
-  [url-cookie "loid" "00000000007u5k357c.2.1598293422963.Z0FBQUFBQmZSQVd1NHcwQkxhM0dON1JZTDJuMHc0aGFzWTlvRXVlVlZMMlcyRkxSWWIyTklqU2FTczBhSGJWSjBfamxUT2YtMVpBcjhKaERKa243NVdXMzVMRkkwVUZyMHk5N0M5MXpxVHY1R0FBdHJTcy1fVDVxNDhNSmszTHMzRE5BZ2ZtcGZnM2E" "Wed Aug 24 18:23:40 2022 GMT" "/" "reddit.com" t])
- ("nephele.itihas.review"
-  [url-cookie "__Host-nc_sameSiteCookielax" "true" "Fri, 31-Dec-2100 23:59:59 GMT" "/" "nephele.itihas.review" t]
-  [url-cookie "__Host-nc_sameSiteCookiestrict" "true" "Fri, 31-Dec-2100 23:59:59 GMT" "/" "nephele.itihas.review" t])
- ("petraia.itihas.review"
-  [url-cookie "__Host-nc_sameSiteCookielax" "true" "Fri, 31-Dec-2100 23:59:59 GMT" "/" "petraia.itihas.review" t]
-  [url-cookie "__Host-nc_sameSiteCookiestrict" "true" "Fri, 31-Dec-2100 23:59:59 GMT" "/" "petraia.itihas.review" t])
- (".reddit.com"
-  [url-cookie "d2_token" "3.6c6aa19cde921380441c2bab75aab4a4167ae17d66ac01370e71d0dbe15413c3.eyJhY2Nlc3NUb2tlbiI6Ii1wVVBTZG93M0dOYjN2MmRNQWlPQk14YnlNQTgiLCJleHBpcmVzIjoiMjAyMC0wOC0yNFQxOToyMzo0My4wMDBaIiwibG9nZ2VkT3V0Ijp0cnVlLCJzY29wZXMiOlsiKiIsImVtYWlsIl19" "Wed, 24 Aug 2022 18:23:43 GMT" "/" ".reddit.com" t]
+ '((".reddit.com"
+  [url-cookie "loid" "00000000007u5k357c.2.1598293422963.Z0FBQUFBQmZSQVd1NHcwQkxhM0dON1JZTDJuMHc0aGFzWTlvRXVlVlZMMlcyRkxSWWIyTklqU2FTczBhSGJWSjBfamxUT2YtMVpBcjhKaERKa243NVdXMzVMRkkwVUZyMHk5N0M5MXpxVHY1R0FBdHJTcy1fVDVxNDhNSmszTHMzRE5BZ2ZtcGZnM2E" "Wed Aug 24 18:23:41 2022 GMT" "/" ".reddit.com" t]
   [url-cookie "csv" "1" "Wed Aug 24 18:23:41 2022 GMT" "/" ".reddit.com" t]
-  [url-cookie "loid" "00000000007u5k357c.2.1598293422963.Z0FBQUFBQmZSQVd1NHcwQkxhM0dON1JZTDJuMHc0aGFzWTlvRXVlVlZMMlcyRkxSWWIyTklqU2FTczBhSGJWSjBfamxUT2YtMVpBcjhKaERKa243NVdXMzVMRkkwVUZyMHk5N0M5MXpxVHY1R0FBdHJTcy1fVDVxNDhNSmszTHMzRE5BZ2ZtcGZnM2E" "Wed Aug 24 18:23:41 2022 GMT" "/" ".reddit.com" t]))
+  [url-cookie "d2_token" "3.6c6aa19cde921380441c2bab75aab4a4167ae17d66ac01370e71d0dbe15413c3.eyJhY2Nlc3NUb2tlbiI6Ii1wVVBTZG93M0dOYjN2MmRNQWlPQk14YnlNQTgiLCJleHBpcmVzIjoiMjAyMC0wOC0yNFQxOToyMzo0My4wMDBaIiwibG9nZ2VkT3V0Ijp0cnVlLCJzY29wZXMiOlsiKiIsImVtYWlsIl19" "Wed, 24 Aug 2022 18:23:43 GMT" "/" ".reddit.com" t])
+ ("petraia.itihas.review"
+  [url-cookie "__Host-nc_sameSiteCookiestrict" "true" "Fri, 31-Dec-2100 23:59:59 GMT" "/" "petraia.itihas.review" t]
+  [url-cookie "__Host-nc_sameSiteCookielax" "true" "Fri, 31-Dec-2100 23:59:59 GMT" "/" "petraia.itihas.review" t])
+ ("nephele.itihas.review"
+  [url-cookie "__Host-nc_sameSiteCookiestrict" "true" "Fri, 31-Dec-2100 23:59:59 GMT" "/" "nephele.itihas.review" t]
+  [url-cookie "__Host-nc_sameSiteCookielax" "true" "Fri, 31-Dec-2100 23:59:59 GMT" "/" "nephele.itihas.review" t])
+ ("reddit.com"
+  [url-cookie "loid" "00000000007u5k357c.2.1598293422963.Z0FBQUFBQmZSQVd1NHcwQkxhM0dON1JZTDJuMHc0aGFzWTlvRXVlVlZMMlcyRkxSWWIyTklqU2FTczBhSGJWSjBfamxUT2YtMVpBcjhKaERKa243NVdXMzVMRkkwVUZyMHk5N0M5MXpxVHY1R0FBdHJTcy1fVDVxNDhNSmszTHMzRE5BZ2ZtcGZnM2E" "Wed Aug 24 18:23:40 2022 GMT" "/" "reddit.com" t]
+  [url-cookie "edgebucket" "bXCGNhCedZGkNromQp" "Wed Aug 24 18:23:40 2022 GMT" "/" "reddit.com" t]))
 )
 
 ;; Local Variables:

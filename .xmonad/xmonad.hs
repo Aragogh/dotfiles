@@ -44,7 +44,7 @@ main = do
                                    }
        , borderWidth		= 0
        , modMask			= mod4Mask
-       , terminal		= "xterm"
+       , terminal		= "sakura"
        , normalBorderColor	= "#002b36"
        , focusedBorderColor	= "#586e75"} `additionalKeys` [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
 							      , ((mod4Mask , xK_b), sendMessage ToggleStruts)

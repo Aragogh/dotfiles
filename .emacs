@@ -36,15 +36,25 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(TeX-engine 'default)
+ '(TeX-view-program-selection
+   '(((output-dvi has-no-display-manager)
+      "dvi2tty")
+     ((output-dvi style-pstricks)
+      "dvips and gv")
+     (output-dvi "xdvi")
+     (output-pdf "Okular")
+     (output-html "xdg-open")))
  '(custom-safe-themes
    '("2809bcb77ad21312897b541134981282dc455ccd7c14d74cc333b6e549b824f3" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default))
  '(display-time-24hr-format t)
  '(display-time-day-and-date t)
  '(display-time-mode t)
  '(display-time-world-list nil)
+ '(elfeed-search-filter "@1-weeks-ago +unread")
  '(haskell-process-auto-import-loaded-modules t)
  '(haskell-process-log t)
  '(haskell-process-suggest-remove-import-lines t)
+ '(ivy-use-virtual-buffers 'recentf)
  '(ledger-accounts-file nil)
  '(ledger-reports
    '(("bal" "ledger [[ledger-mode-flags]] -f /home/cheddles/accounts.ledger bal")
@@ -115,7 +125,7 @@ Brief description:
    '((sequence "TODO(t)" "ONGOING(o)" "WAITING(w@/!)" "ON HOLD(h@)" "|" "DONE(d!)" "CANCELLED(c!)")))
  '(org-use-fast-todo-selection t)
  '(package-selected-packages
-   '(org-agenda-property org-caldav ivy-bibtex org-ref org-noter-pdftools org-noter dklrt ledger-mode openwith pdf-tools znc counsel ivy ctable proof-general company-coq ess ess-R-data-view ess-smart-underscore function-args cdlatex auctex auctex-latexmk auctex-lua org-bullets org-brain org solarized-theme haskell-mode))
+   '(elfeed-org elfeed org-agenda-property org-caldav ivy-bibtex org-ref org-noter-pdftools org-noter dklrt ledger-mode openwith pdf-tools znc counsel ivy ctable proof-general company-coq ess ess-R-data-view ess-smart-underscore function-args cdlatex auctex auctex-latexmk auctex-lua org-bullets org-brain org solarized-theme haskell-mode))
  '(safe-local-variable-values
    '((eval let
 	   ((unimath-topdir
@@ -161,9 +171,16 @@ Brief description:
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(org-agenda-calendar-event ((t (:foreground "light goldenrod"))))
+ '(org-agenda-date ((t (:foreground "#409090" :underline t))))
+ '(org-agenda-date-today ((t (:foreground "#cd8b00" :underline t :weight bold))))
+ '(org-agenda-date-weekend ((t (:foreground "#8b8bcd" :underline t))))
+ '(org-special-keyword ((t (:foreground "dark goldenrod"))))
+ '(org-time-grid ((t (:inherit default))))
+ '(org-warning ((t (:foreground "indian red" :underline nil))))
+ '(widget-field ((t (:extend t :background "LightSteelBlue1" :foreground "gray26")))))
 
-(load-theme 'solarized-dark)
+(load-theme 'inkpot)
 
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
@@ -308,7 +325,7 @@ Brief description:
 	(:calendar-id "life"
 		      :select-tags ("life"))
 	(:calendar-id "self"
-	:select-tags ("self"))
+		      :select-tags ("self"))
 	))
 
 (setq org-icalendar-alarm-time 1)
@@ -347,3 +364,28 @@ Brief description:
 		    (org-caldav-sync-with-delay 300))))
 
 (setq org-agenda-hide-tags-regexp "work\\|life\\|self")
+
+(setq elfeed-feeds
+      '(("http://www.youtube.com/feeds/videos.xml?channel_id=UCG1h-Wqjtwz7uUANw6gazRw" youtube)
+	("http://www.youtube.com/feeds/videos.xml?channel_id=UCNvsIonJdJ5E4EXMa65VYpA" youtube)
+	("https://www.youtube.com/feeds/videos.xml?channel_id=UCYRR0SgbYH59htIHkwTbqMw" youtube)
+	("http://www.youtube.com/feeds/videos.xml?channel_id=UC2PA-AKmVpU6NKCGtZq_rKQ" youtube)
+	("https://www.youtube.com/feeds/videos.xml?user=yacobg42" youtube)
+	("http://feeds.feedburner.com/FutilityCloset" misc)
+	("https://gwern.substack.com/feed" misc)
+	("https://www.blogger.com/feeds/4748060798655400108/posts/default" misc)
+	("https://www.overcomingbias.com/feed" misc)
+	("https://astralcodexten.substack.com/feed" misc)
+	("https://www.motherjones.com/politics/feed/" news)
+	("https://api.quantamagazine.org/feed/" news)
+	("https://theintercept.com/feed/?lang=en" news)
+	("https://theatlantic.com/feed/all" news)
+	("https://mathbabe.org/feed/" math)
+	("https://www.galoisrepresentations.com/feed/" math)
+	("https://terrytao.wordpress.com/feed/" math)
+	("https://golem.ph.utexas.edu/category/atom10.xml" math)
+	("https://xenaproject.wordpress.com/feed/" math)
+	("https://johncarlosbaez.wordpress.com/feed/" math)
+	("https://mathematicswithoutapologies.wordpress.com/feed/" math)))
+
+(setq ivy-read-action-function 'ivy-hydra-read-action)
